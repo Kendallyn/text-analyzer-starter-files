@@ -16,11 +16,13 @@ function countDistinctWords(tokens) {
 }
 
 function tokenizeText(text) {
+    //return list of words without spaces, sort alphabetically, and covert to lowercase
     return text.toLowerCase().match(/\b[^\s]+\b/g).sort();
 }
 
 
 function removeReturns(text) {
+    //removes all return characters following a word and on their own
     return text.replace(/\r?\n|\r/g, "");
 }
 
