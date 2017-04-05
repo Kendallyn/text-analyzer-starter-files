@@ -45,7 +45,6 @@ function reportOnText(text) {
 function watchFormSubmission() {
     $('.js-text-form').submit(function (event) {
         event.preventDefault();
-        // get the text the user submitted
         var userText = $(this).find('#user-text').val();
         reportOnText(removeReturns(userText));
     });
